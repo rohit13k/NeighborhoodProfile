@@ -161,7 +161,7 @@ public class HyperLogLogUtil {
   }
   public static long computeHash(Object value) {
 		 if(value instanceof Long){
-			 return computeHash((long)value);
+			 return computeHash(value);
 		 }
 		 if(value instanceof String){
 			 return computeHash(String.valueOf(value));

@@ -133,14 +133,14 @@ public class SlidingHyperANF {
 			temp = line.split(",");
 			if (!graph.containsKey(temp[0])) {
 				SlidingHLL log = new SlidingHLL(k);
-				ArrayList<SlidingHLL> ahll = new ArrayList<>();
+				ArrayList<SlidingHLL> ahll = new ArrayList<SlidingHLL>();
 				log.add(Integer.parseInt(temp[0]));
 				ahll.add(log);
 				graph.put(Integer.parseInt(temp[0]), ahll);
 			}
 			if (!graph.containsKey(temp[1])) {
 				SlidingHLL log = new SlidingHLL(k);
-				ArrayList<SlidingHLL> ahll = new ArrayList<>();
+				ArrayList<SlidingHLL> ahll = new ArrayList<SlidingHLL>();
 				log.add(Integer.parseInt(temp[1]));
 				ahll.add(log);
 				graph.put(Integer.parseInt(temp[1]), ahll);
@@ -157,14 +157,14 @@ public class SlidingHyperANF {
 			temp = data.get(i).split(",");
 			if (!graph.containsKey(temp[0])) {
 				SlidingHLL log = new SlidingHLL(k);
-				ArrayList<SlidingHLL> ahll = new ArrayList<>();
+				ArrayList<SlidingHLL> ahll = new ArrayList<SlidingHLL>();
 				log.add(Integer.parseInt(temp[0]));
 				ahll.add(log);
 				graph.put(Integer.parseInt(temp[0]), ahll);
 			}
 			if (!graph.containsKey(temp[1])) {
 				SlidingHLL log = new SlidingHLL(k);
-				ArrayList<SlidingHLL> ahll = new ArrayList<>();
+				ArrayList<SlidingHLL> ahll = new ArrayList<SlidingHLL>();
 				log.add(Integer.parseInt(temp[1]));
 				ahll.add(log);
 				graph.put(Integer.parseInt(temp[1]), ahll);

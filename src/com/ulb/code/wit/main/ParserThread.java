@@ -16,7 +16,6 @@ public class ParserThread implements Callable<Integer> {
 		this.timestamp=time;
 		
 	}
-	@Override
 	public Integer call() {
 		return gsa.addEdge(user1, user2, timestamp);
 
