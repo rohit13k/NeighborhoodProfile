@@ -92,8 +92,8 @@ public class TestHandler {
 		String exactOutPut = resultFolderPath + File.separator + inFileName
 				+ "_exact.csv";
 		System.out.println("******Started precision test for exact **********");
-		// testExact(PropagationType.DISTANCEWISE, inputFilePath, exactOutPut,
-		// Constants.DISTANCE, window);
+		 testExact(PropagationType.DISTANCEWISE, inputFilePath, exactOutPut,
+		 Constants.DISTANCE, window);
 		for (int i = 2; i < params.length; i++) {
 			numberOfBucket = Integer.parseInt(params[i]);
 			System.out.println("******Started precision test for "
