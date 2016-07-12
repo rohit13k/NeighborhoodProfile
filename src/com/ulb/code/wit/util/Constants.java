@@ -10,7 +10,7 @@ public class Constants {
 		DISTANCEWISE, NODEWISE
 	};
 
-	public static final int DISTANCE = 4;
+	public static final int DISTANCE = 5;
 
 	public enum Commands {
 		CHECK_PARALLEL_VS_SERIAL("checkParalleAndSerial"), CHECK_PRECISION(

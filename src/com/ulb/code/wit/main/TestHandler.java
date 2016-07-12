@@ -213,7 +213,7 @@ public class TestHandler {
 		String[] params;
 		boolean starttesting = false;
 		try {
-			br = new BufferedReader(new FileReader("TestConfiguration.txt"));
+			br = new BufferedReader(new FileReader("application.conf"));
 			int linenumber = 1;
 			while ((line = br.readLine()) != null) {
 				if (line.trim().equals("")) {

@@ -23,7 +23,7 @@ import com.ulb.code.wit.util.Constants.PropagationType;
 public class Test {
 
 	public static void main(String[] args) throws IOException {
-		String inputFilePath = ".//data//facebook.csv";
+		String inputFilePath = ".//data//facebook_reduced.csv";
 		String resultFolderPath = ".//data//";
 		String inFileName = new File(inputFilePath).getName().replace(".csv",
 				"");
@@ -31,8 +31,11 @@ public class Test {
 		long stime = new Date().getTime();
 		String exactOutPut = resultFolderPath + File.separator + inFileName
 				+ "_exact.csv";
-		testExact(PropagationType.DISTANCEWISE, inputFilePath, exactOutPut,
-				Constants.DISTANCE, window);
+		// testExact(PropagationType.DISTANCEWISE, inputFilePath, exactOutPut,
+		// Constants.DISTANCE, window);
+
+		TestHandler th = new TestHandler(resultFolderPath);
+		th.performTest();
 		System.out.println("time " + (new Date().getTime() - stime));
 	}
 
@@ -89,4 +92,5 @@ public class Test {
 		fw1.close();
 
 	}
+
 }
