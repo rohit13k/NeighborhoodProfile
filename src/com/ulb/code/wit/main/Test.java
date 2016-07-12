@@ -23,17 +23,17 @@ import com.ulb.code.wit.util.Constants.PropagationType;
 public class Test {
 
 	public static void main(String[] args) throws IOException {
-		String inputFilePath = args[1];
-		String resultFolderPath = "";
+		String inputFilePath = ".//data//facebook.csv";
+		String resultFolderPath = ".//data//";
 		String inFileName = new File(inputFilePath).getName().replace(".csv",
 				"");
-		long[] window = { 0l};
-
+		long[] window = { 0l };
+		long stime = new Date().getTime();
 		String exactOutPut = resultFolderPath + File.separator + inFileName
 				+ "_exact.csv";
 		testExact(PropagationType.DISTANCEWISE, inputFilePath, exactOutPut,
 				Constants.DISTANCE, window);
-
+		System.out.println("time " + (new Date().getTime() - stime));
 	}
 
 	private static void testExact(PropagationType ptype, String filePath,
